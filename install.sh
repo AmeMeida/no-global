@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[ -f ~/.bash_profile ] && cp .bash_profile ~/
+[ ! -f ~/.bash_profile ] && cp .bash_profile ~/
 
 [ ! -d ~/scripts ] && mkdir ~/scripts
 
