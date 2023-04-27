@@ -1,11 +1,14 @@
 #!/bin/bash
 
+
+
+
 regex='^.*config\s+--global\s+user\.(name|email)\s+\S+.*$';
 command="$@";
 
 if [[ $command =~ $regex ]]; then
     [[ ${BASH_REMATCH[1]} == 'email' ]] && tipo='email' || tipo='nome de usuário';
-
+    echo "Odiei o git config --global, então criei esse script pra evitar que nacrai ou alguem use. se vc usar espero q vc se mate.";
     echo 'pfvr para de usar --global ta todo mundo sofrendo';
     echo "Use o git config diretamente para definir o $tipo apenas nesse repositório:";
     echo '';
