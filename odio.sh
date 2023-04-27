@@ -1,6 +1,6 @@
 #!/bin/bash
 
-regex='^.*config\s+--global\s+user\.(name|email)\s+\S+.*$'
+regex='^.*config\s+--global\s+user\.(name|email)\s+\S+.*$';
 command="$@";
 
 if [[ $command =~ $regex ]]; then

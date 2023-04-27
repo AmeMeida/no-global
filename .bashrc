@@ -1,2 +1,1 @@
-alias git='sh ~/scripts/odio.sh';
-
+alias git='bash ~/scripts/odio.sh';

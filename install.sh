@@ -7,6 +7,3 @@
 cp odio.sh ~/scripts/
 
 [ -f ~/.bashrc ] && cat .bashrc >> ~/.bashrc || cp .bashrc ~/
-
-source ~/.bashrc
-
